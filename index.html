@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta chaRset="UTF-8">
     <meta name="viewpoRt" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="flex justify-center items-center">
-    <div class="max-w-[430px] bg-blue-700 h-[500px] rounded-[15px] mt-20">
+    <div class="max-w-[430px] bg-blue-700 h-[555px] rounded-[15px] mt-10">
         <h1 class="text-center text-[60px] text-white font-serif"><b>calculator</b></h1>
-    <div class="grid bg-white rounded-[12px] w-[340px] h-[50px] ml-4"><input type="text" id="Results"></div>
-    <div class="grid grid-cols-4 text-white text-[40px] mt-[10px] p-2">
-        <button onclick="clearResult()" class="bg-white text-black font-sans m-3 w-[65px] h-[60px] rounded-[20px]">C</button>
-        <button onclick="addResult('%')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">%</button>
-        <button onclick="addResult('+')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">+</button>
-        <button onclick="addResult('/')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">/</button>
-        <button onclick="addResult(7)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">7</button>
-        <button onclick="addResult(8)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">8</button>
-        <button onclick="addResult(9)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">9</button>
-        <button onclick="addResult('*')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">*</button>
-        <button onclick="addResult(4)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">4</button>
-        <button onclick="addResult(5)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">5</button>
-        <button onclick="addResult(6)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">6</button>
-        <button onclick="addResult('-')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">-</button>
-        <button onclick="addResult('.')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">.</button>
-        <button onclick="addResult(0)"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">0</button>
-        <button onclick="addResult('00')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">00</button>
-        <button onclick="compute('=')"  class="bg-white text-black  m-3 w-[65px] h-[60px] rounded-[20px]">=</button>
+        <div class="grid bg-white rounded-[12px] w-[340px] h-[50px] m-4"><input type="text" id="Results"></div>
+        <div class="grid grid-cols-4 gap-4 text-white text-[40px] mt-[5px] p-3">
+            <button onclick="clearResult()"
+                class="bg-white text-black font-sans  w-[65px] h-[60px] rounded-[20px]">C</button>
+            <button onclick="addResult('%')"
+                class="bg-white text-black   w-[65px] h-[60px] rounded-[20px]">%</button>
+            <button onclick="addResult('+')"
+                class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">+</button>
+            <button onclick="addResult('/')"
+                class="bg-white text-black   w-[65px] h-[60px] rounded-[20px]">/</button>
+            <button onclick="addResult(7)" class="bg-white text-black   w-[65px] h-[60px] rounded-[20px]">7</button>
+            <button onclick="addResult(8)" class="bg-white text-black   w-[65px] h-[60px] rounded-[20px]">8</button>
+            <button onclick="addResult(9)" class="bg-white text-black   w-[65px] h-[60px] rounded-[20px]">9</button>
+            <button onclick="addResult('*')"
+                class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">*</button>
+            <button onclick="addResult(3)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">3</button>
+            <button onclick="addResult(4)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">4</button>
+            <button onclick="addResult(5)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">5</button>
+            <button onclick="addResult(6)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">6</button>
+            <button onclick="addResult(2)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">2</button>
+            <button onclick="addResult(1)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">1</button>
+            <button onclick="addResult('-')"
+                class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">-</button>
+            <button onclick="addResult('.')"
+                class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">.</button>
+            <button onclick="addResult(0)" class="bg-white text-black  w-[65px] h-[60px] rounded-[20px]">0</button>
+            <button onclick="addResult('00')"
+                class="bg-white text-black w-[65px] h-[60px] rounded-[20px]">00</button>
+            <button onclick="compute('=')" class="bg-white text-black col-span-2 ml-3 w-[120px] h-[60px] rounded-[20px]">=</button>
+        </div>
     </div>
-    </div>
-    
-    
+
+
     <script src="calculator.js"></script>
 </body>
+
 </html>
