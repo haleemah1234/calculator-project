@@ -8,6 +8,6 @@ function clearResult() {
 function compute() {
     output.value = eval (output.value);
 }
-function backSpace() {
+function giveSpace() {
     output.value = output.value.slice(0, -1)
 }
